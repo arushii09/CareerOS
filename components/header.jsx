@@ -19,16 +19,16 @@ const Header = () => {
         className="h-12 py-1 w-auto object-contain"
         />
         </Link>
-
-        <div className=" flex items-center space-x-2 md:space-x-4 ">
+        
+        <div className=" flex items-center space-x-2 md:space-x-4">
           <SignedIn>
             <Link href={"/dashboard"}>
-            <Button>
+            <Button variant="outline">
               <LayoutDashboard className="h-4 w-4"/>
               <span className="hidden md:block">Industry Insights</span>
             </Button>
             </Link>
-          </SignedIn>
+          
 
           <DropdownMenu>
             <DropdownMenuTrigger>
@@ -59,17 +59,28 @@ const Header = () => {
              </DropdownMenuItem>
            </DropdownMenuContent>
           </DropdownMenu>
-        </div>
-      </nav>
-
-      <SignedOut>
-              <SignInButton />
+          </SignedIn>
+          
+           <SignedOut>
+              <SignInButton>
+                <Button variant="outline">Sign In</Button>
+              </SignInButton>
             </SignedOut>
             <SignedIn>
-              <UserButton />
+              <UserButton 
+              appearance={{
+                elements:{
+                  avatarBox:"w-15 h-15",
+                  userPreviewMainIdentifier: "font-semibold"
+                }
+              }}
+              afterSignOutUrl="/"
+              />
             </SignedIn>
+        </div>
+      </nav>
     </header>
-  )
-}
+  );
+};
 
 export default Header
