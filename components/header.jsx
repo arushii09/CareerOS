@@ -16,7 +16,7 @@ const Header = () => {
         alt="CareerOS" 
         width={200} 
         height={600}
-        className="h-12 py-1 w-auto object-contain"
+        className="h-45 py-1 w-auto object-contain"
         />
         </Link>
         
