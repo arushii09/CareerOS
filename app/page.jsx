@@ -1,11 +1,12 @@
 /*import Image from "next/image";*/
 
+import HeroSection from "@/components/hero";
 import { Button } from "@/components/ui/button";
 
 export default function Home() {
-  return <div>hi it is me
-<br/>
-
-<Button>hello</Button>
+  return <div>
+    <div className="grid-background "></div>
+   
+   <HeroSection />
   </div>;
 }
