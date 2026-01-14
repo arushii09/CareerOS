@@ -1,5 +1,6 @@
 import Link from "next/link";
 import { Button } from "./ui/button";
+import Image from "next/image";
 
 const HeroSection = () => {
   return <section className="relative z-10 w-full pt-60 md:pt-48 pb-10 text-foreground">
@@ -27,6 +28,19 @@ const HeroSection = () => {
             View Demo
            </Button>
           </Link>
+        </div>
+
+        <div>
+          <div>
+            <Image
+            src={"/banner1.png"}
+            width={1280}
+            height={720}
+            alt="Dashboard Preview"
+            className="rounded-lg shadow-2x1 border mx-auto"
+            priority
+            />
+          </div>
         </div>
     </div>
   </section>;
