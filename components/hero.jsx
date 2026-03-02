@@ -14,7 +14,7 @@ const HeroSection = () => {
         <h1 className="text-4xl md:text-6xl font-bold tracking-tight">
           An AI Career Operating System 
           <br />
-          for Skill Planning and Growth
+          for Preparation and Growth
         </h1>
 
         <p className="text-lg text-muted-foreground max-w-xl">
